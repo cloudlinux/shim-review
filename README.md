@@ -158,8 +158,8 @@ Yes.
 ### If there are allow-listed hashes please provide exact binaries for which hashes are created via file sharing service, available in public with anonymous access for verification.
 *******************************************************************************
 2 certificates enrolled in vendor_db:  
-- Current CloudLinux EV cert
-- New CloudLinux self-signed CA cert
+- Current CloudLinux EV cert (clsecureboot001.cer)
+- New CloudLinux self-signed CA cert (clsecurebootca2.cer)
 
 No allow-listed hashes in vendor_db.
 
@@ -235,14 +235,16 @@ fwupd-efi.cloudlinux,1,CloudLinux,fwupd,1.7.8,mail:security@cloudlinux.com
 *******************************************************************************
 ### Which modules are built into your signed GRUB2 image?
 *******************************************************************************
-`all_video boot blscfg btrfs cat configfile cryptodisk echo ext2 fat font
+```
+all_video boot blscfg btrfs cat configfile cryptodisk echo ext2 fat font
 gcry_rijndael gcry_rsa gcry_serpent gcry_sha256 gcry_twofish gcry_whirlpool
 gfxmenu gfxterm gzio halt hfsplus http increment iso9660 jpeg loadenv loopback
 linux lvm luks mdraid09 mdraid1x minicmd net normal part_apple part_msdos
 part_gpt password_pbkdf2 png reboot regexp search search_fs_uuid search_fs_file
 search_label serial sleep syslinuxcfg test tftp video xfs efi_netfs efifwsetup
 efinet lsefi lsefimmap connectefi backtrace chain usb usbserial_common
-usbserial_pl2303 usbserial_ftdi usbserial_usbdebug keylayouts at_keyboard`
+usbserial_pl2303 usbserial_ftdi usbserial_usbdebug keylayouts at_keyboard
+```
 
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or other)?
