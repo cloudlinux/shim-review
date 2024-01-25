@@ -284,3 +284,7 @@ It's RHEL8 kernel based on 4.18.0, plus a full compliment of patches for Secure 
 *******************************************************************************
 Current CloudLinux EV cert expires Mar 25, 2024, so сould you please prioritize this review?  
 Thanks.
+
+Previous reviews:  
+shim-15.4: https://github.com/rhboot/shim-review/issues/152  
+shim-15.6 (security contacts verification done here): https://github.com/rhboot/shim-review/issues/251  
