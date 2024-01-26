@@ -228,7 +228,7 @@ grub.cloudlinux,2,CloudLinux,grub2,2.02-150.el8.cloudlinux,mailto:security@cloud
 fwupd:
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 fwupd-efi,1,Firmware update daemon,fwupd-efi,1.3,https://github.com/fwupd/fwupd
-fwupd-efi.rhel,1,CloudLinux,fwupd,1.7.8,mail:secalert@redhat.com
+fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.7.8,mail:secalert@redhat.com
 fwupd-efi.cloudlinux,1,CloudLinux,fwupd,1.7.8,mail:security@cloudlinux.com
 ```
 
