@@ -29,7 +29,7 @@ You will be asked to post the contents of these mails in your `shim-review` issu
 - Position: Software Architect
 - Email address: alukoshko@cloudlinux.com
 - PGP key fingerprint: 135E B273 0F8A 5B9C D0AC 38B0 0ED6 B51B CD0F AADF
-- PGP key: https://raw.githubusercontent.com/cloudlinux/shim-review/master/alukoshko.pub
+- PGP key: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x135eb2730f8a5b9cd0ac38b00ed6b51bcd0faadf
 
 (Key should be signed by the other security contacts, pushed to a keyserver
 like keyserver.ubuntu.com, and preferably have signatures that are reasonably
@@ -38,11 +38,11 @@ well known in the Linux community.)
 *******************************************************************************
 ### Who is the secondary contact for security updates, etc.?
 *******************************************************************************
-- Name: Leonid Kanter
-- Position: IT Director
-- Email address: lkanter@cloudlinux.com
-- PGP key fingerprint: A07D AA47 48B2 C445 6A44 9B38 4002 9607 9AE5 954F
-- PGP key: https://raw.githubusercontent.com/cloudlinux/shim-review/master/lkanter.pub
+- Name: Dmitry Morozov
+- Position: Chief Security Officer
+- Email address: dmorozov@cloudlinux.com
+- PGP key fingerprint: 4A91 8D11 404A C19A E14A F9E6 1522 8C94 B34C 072B
+- PGP key: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x4a918d11404ac19ae14af9e615228c94b34c072b
 
 (Key should be signed by the other security contacts, pushed to a keyserver
 like keyserver.ubuntu.com, and preferably have signatures that are reasonably
@@ -287,4 +287,6 @@ Thanks.
 
 Previous reviews:  
 shim-15.4: https://github.com/rhboot/shim-review/issues/152  
-shim-15.6 (security contacts verification done here): https://github.com/rhboot/shim-review/issues/251  
+shim-15.6: https://github.com/rhboot/shim-review/issues/251
+
+Secondary security contact changed since last review and needs verification.
