@@ -1,33 +1,8 @@
-This repo is for review of requests for signing shim. To create a request for review:
-
-- clone this repo (preferably fork it)
-- edit the template below
-- add the shim.efi to be signed
-- add build logs
-- add any additional binaries/certificates/SHA256 hashes that may be needed
-- commit all of that
-- tag it with a tag of the form "myorg-shim-arch-YYYYMMDD"
-- push it to GitHub
-- file an issue at https://github.com/rhboot/shim-review/issues with a link to your tag
-- approval is ready when the "accepted" label is added to your issue
-
-Note that we really only have experience with using GRUB2 or systemd-boot on Linux, so
-asking us to endorse anything else for signing is going to require some convincing on
-your part.
-
-As of 20 October 2025, shims sent to Microsoft will be signed with the 2011 and 2023 keys. For each shim you submit, you will receive two copies back, each signed by a different key. Here is the latest information from Microsoft: https://techcommunity.microsoft.com/blog/hardware-dev-center/signing-with-the-new-2023-microsoft-uefi-certificates-what-submitters-need-to-kn/4455787
-
-New signing requirements have also taken effect, and are available here: https://techcommunity.microsoft.com/blog/hardware-dev-center/updated-microsoft-uefi-signing-requirements/1062916 Please note that undergoing this shim review exempts you from yearly security audits, as long as your shim only hands off to open source boot loaders.
-
-Hint: check the [docs](./docs/) directory in this repo for guidance on submission and getting your shim signed.
-
-Here's the template:
-
 *******************************************************************************
 ### What organization or people are asking to have this signed?
 *******************************************************************************
 Organization name and website:  
-[your text here]
+Cloud Linux Software, Inc. - https://www.cloudlinux.com/
 
 *******************************************************************************
 ### What's the legal data that proves the organization's genuineness?
@@ -37,34 +12,31 @@ Provide the information, which can prove the genuineness with certainty.
 Company/tax register entries or equivalent:  
 (a link to the organization entry in your jurisdiction's register will do)  
 
-[your text here]
+Public entity record:  
+https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResults?InquiryType=EntityName&InquiryDirectionType=PreviousRecord&SearchTerm=Cloud%20Marketing%20LLC&SearchNameOrder=CLOUDLOCK%20L210004822170&ListNameOrder=CLOUDLINUXSOFTWARE%20F180000055690&Detail=FL.DOS.Corporations.Shared.Contracts.FilingRecord
 
 The public details of both your organization and the issuer in the EV certificate used for signing .cab files at Microsoft Hardware Dev Center File Signing Services.  
 (**not** the CA certificate embedded in your shim binary)
 
-Example:
-
 ```
-Issuer: O=MyIssuer, Ltd., CN=MyIssuer EV Code Signing CA
-Subject: C=XX, O=MyCompany, Inc., CN=MyCompany, Inc.
+Issuer: CN="Sectigo Public Code Signing CA EV R36", O="Sectigo Limited", C=GB
+Subject: CN="Cloud Linux Software, Inc", O="Cloud Linux Software, Inc", S=Florida, C=US, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Florida, OID.1.3.6.1.4.1.311.60.2.1.3=US, SERIALNUMBER=F18000005569
 ```
-
-[your text here]
 
 *******************************************************************************
 ### What product or service is this for?
 *******************************************************************************
-[your text here]
+CloudLinux OS 8
 
 *******************************************************************************
 ### What's the justification that this really does need to be signed for the whole world to be able to boot it?
 *******************************************************************************
-[your text here]
+We're a well known vendor with more than 4000 clients and more than 200,000 product installations.
 
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
 *******************************************************************************
-[your text here]
+CloudLinux OS 8 provides kernel with own patches.
 
 *******************************************************************************
 ### Who is the primary contact for security updates, etc.?
@@ -74,18 +46,20 @@ An authorized reviewer will initiate contact verification by sending each securi
 You will be asked to post the contents of these mails in your `shim-review` issue to prove ownership of the email addresses and PGP keys.
 Please upload the PGP keys to a well-known keyserver like keyserver.ubuntu.com and/or include them in the review as an .asc file.
 *******************************************************************************
-- Name:
-- Position:
-- Email address:
-- PGP key fingerprint:
+- Name: Andrew Lukoshko
+- Position: Software Architect
+- Email address: alukoshko@cloudlinux.com
+- PGP key fingerprint: 135E B273 0F8A 5B9C D0AC 38B0 0ED6 B51B CD0F AADF
+- PGP key: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x135eb2730f8a5b9cd0ac38b00ed6b51bcd0faadf
 
 *******************************************************************************
 ### Who is the secondary contact for security updates, etc.?
 *******************************************************************************
-- Name:
-- Position:
-- Email address:
-- PGP key fingerprint:
+- Name: Dmitry Morozov
+- Position: Chief Security Officer
+- Email address: dmorozov@cloudlinux.com
+- PGP key fingerprint: 4A91 8D11 404A C19A E14A F9E6 1522 8C94 B34C 072B
+- PGP key: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x4a918d11404ac19ae14af9e615228c94b34c072b
 
 *******************************************************************************
 ### Were these binaries created from the 16.1 shim release tar?
@@ -119,7 +93,7 @@ authentic, please confirm this here with a simple *yes*.
 
 A short guide on verifying public keys and signatures should be available in the [docs](./docs/) directory.
 *******************************************************************************
-[your text here]
+Yes.
 
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to result in your binary:
@@ -127,26 +101,28 @@ Hint: If you attach all the patches and modifications that are being used to you
 
 You can also point to your custom git servers, where the code is hosted.
 *******************************************************************************
-[your url here]
+https://github.com/rhboot/shim/tree/16.1  
+Source rpm is: https://github.com/cloudlinux/shim-review/blob/shim-16.1/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.src.rpm  
+CloudLinux 8 is based on AlmaLinux 8 so repos for build deps etc are here: http://repo.almalinux.org/almalinux/8/
 
 *******************************************************************************
 ### What patches are being applied and why:
 Mention all the external patches and build process modifications, which are used during your building process, that make your shim binary be the exact one that you posted as part of this application.
 *******************************************************************************
-[your text here]
+None.
 
 *******************************************************************************
 ### Do you have the NX bit set in your shim? If so, is your entire boot stack NX-compatible and what testing have you done to ensure such compatibility?
 
 See https://techcommunity.microsoft.com/t5/hardware-dev-center/nx-exception-for-shim-community/ba-p/3976522 for more details on the signing of shim without NX bit.
 *******************************************************************************
-[your text here]
+No. The NX bit is not set in this shim build.
 
 *******************************************************************************
 ### What exact implementation of Secure Boot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
 Skip this, if you're not using GRUB2.
 *******************************************************************************
-[your text here]
+This is a "RHEL-like" implementation.
 
 *******************************************************************************
 ### Do you have fixes for all the following GRUB2 CVEs applied?
@@ -214,21 +190,22 @@ Skip this, if you're not using GRUB2.
   * CVE-2025-1118
   * CVE-2025-1125
 *******************************************************************************
-[your text here]
+Yes.
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 5?
 Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:  
 `grub,5,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
 *******************************************************************************
-[your text here]
+Yes.
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
 ### Does your new chain of trust disallow booting old GRUB2 builds affected by the CVEs?
 If you had no previous signed shim, say so here. Otherwise a simple _yes_ will do.
 *******************************************************************************
-[your text here]
+Old shims hashes are provided to Microsoft.  
+Old GRUB2 builds are disallowed to boot because they have generation < 5 in SBAT.
 
 *******************************************************************************
 ### If your boot chain of trust includes a Linux kernel:
@@ -238,30 +215,35 @@ If you had no previous signed shim, say so here. Otherwise a simple _yes_ will d
 Hint: upstream kernels should have all these applied, but if you ship your own heavily-modified older kernel version, that is being maintained separately from upstream, this may not be the case.  
 If you are shipping an older kernel, double-check your sources; maybe you do not have all the patches, but ship a configuration, that does not expose the issue(s).
 *******************************************************************************
-[your text here]
+All mentioned upstream commits are applied.
 
 *******************************************************************************
 ### How does your signed kernel enforce lockdown when your system runs with Secure Boot enabled?
 Hint: If it does not, we are not likely to sign your shim.
 *******************************************************************************
-[your text here]
+Our kernel inherits the RHEL/CentOS lockdown behavior: when Secure Boot is detected at boot time, the kernel automatically enables lockdown in `integrity` mode. This restricts unsigned module loading, kexec of unsigned images, /dev/mem and /dev/kmem access, raw MSR access, BPF, kprobes, and other interfaces that would otherwise allow modifying the running kernel.
 
 *******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
 *******************************************************************************
-[your text here]
+Yes. Kernel is slightly modified to allow using CloudLinux's own LVE kernel module.  
+Lightweight Virtual Environment (LVE) technology allows hosts to set up individual resource limits necessary for hosting.
 
 *******************************************************************************
 ### Do you use an ephemeral key for signing kernel modules?
 ### If not, please describe how you ensure that one kernel build does not load modules built for another kernel.
 *******************************************************************************
-[your text here]
+Yes.
 
 *******************************************************************************
 ### If you use vendor_db functionality of providing multiple certificates and/or hashes please briefly describe your certificate setup.
 ### If there are allow-listed hashes please provide exact binaries for which hashes are created via file sharing service, available in public with anonymous access for verification.
 *******************************************************************************
-[your text here]
+2 certificates enrolled in vendor_db:  
+- Current CloudLinux EV cert (clsecureboot001.cer)
+- CloudLinux self-signed CA cert (clsecurebootca2.cer)
+
+No allow-listed hashes in vendor_db.
 
 *******************************************************************************
 ### If you are re-using the CA certificate from your last shim binary, you will need to add the hashes of the previous GRUB2 binaries exposed to the CVEs mentioned earlier to vendor_dbx in shim. Please describe your strategy.
@@ -269,7 +251,8 @@ This ensures that your new shim+GRUB2 can no longer chainload those older GRUB2 
 
 If this is your first application or you're using a new CA certificate, please say so here.
 *******************************************************************************
-[your text here]
+We don't use vendor_dbx in this build.  
+Old GRUB2 builds are disallowed to boot because they have generation < 5 in SBAT.
 
 *******************************************************************************
 ### Is the Dockerfile in your repository the recipe for reproducing the building of your shim binary?
@@ -279,13 +262,14 @@ Hint: Prefer using *frozen* packages for your toolchain, since an update to GCC,
 
 If your shim binaries can't be reproduced using the provided Dockerfile, please explain why that's the case, what the differences would be and what build environment (OS and toolchain) is being used to reproduce this build? In this case please write a detailed guide, how to setup this build environment from scratch.
 *******************************************************************************
-[your text here]
+Yes. This is built on AlmaLinux OS 8 (latest).  
+The Dockerfile in this repository can be used to launch an identical buildroot and reproduce the binary.
 
 *******************************************************************************
 ### Which files in this repo are the logs for your build?
 This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
 *******************************************************************************
-[your text here]
+root.log and build.log in this repo.
 
 *******************************************************************************
 ### What changes were made in the distro's secure boot chain since your SHIM was last signed?
@@ -293,24 +277,27 @@ For example, signing new kernel's variants, UKI, systemd-boot, new certs, new CA
 
 Skip this, if this is your first application for having shim signed.
 *******************************************************************************
-[your text here]
+Update shim from 15.8 to 16.1. No other changes in the secure boot chain (same certificates, same kernel signing process, same GRUB2 implementation).
 
 *******************************************************************************
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
-[your text here]
+```
+28d27f9e25e263244275c67bf382a9a13be423eb2e8a77ac942ddff7c33f3d32  shimx64.efi
+b182fd98418bb31864f3cd0fa2fcd3d3dab6d0eb53d9eeb0f5411d9cb7b6e8a8  shimia32.efi
+```
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
 Describe the security strategy that is used for key protection. This can range from using hardware tokens like HSMs or Smartcards, air-gapped vaults, physical safes to other good practices.
 *******************************************************************************
-[your text here]
+They're stored in FIPS 140-2 certified HSM tokens provided by Certification Authorities.
 
 *******************************************************************************
 ### Do you use EV certificates as embedded certificates in the shim?
 A _yes_ or _no_ will do. There's no penalty for the latter.
 *******************************************************************************
-[your text here]
+One of the included certs is EV (clsecureboot001.cer), the second is self-signed (clsecurebootca2.cer).
 
 *******************************************************************************
 ### Are you embedding a CA certificate in your shim?
@@ -319,7 +306,7 @@ if _yes_: does that certificate include the X509v3 Basic Constraints
 to say that it is a CA? See the [docs](./docs/) for more guidance
 about this.
 *******************************************************************************
-[your text here]
+Yes. The clsecurebootca2.cer certificate is a self-signed CA and includes the X509v3 Basic Constraints extension marked as `CA:TRUE`.
 
 *******************************************************************************
 ### Do you add a vendor-specific SBAT entry to the SBAT section in each binary that supports SBAT metadata ( GRUB2, fwupd, fwupdate, systemd-boot, systemd-stub, shim + all child shim binaries )?
@@ -332,7 +319,24 @@ If you are using a downstream implementation of GRUB2 (e.g. from Fedora or Debia
 
 Hint: run `objcopy --dump-section .sbat=/dev/stdout YOUR_EFI_BINARY` to get these entries. Paste them here. Preferably surround each listing with three backticks (\`\`\`), so they render well.
 *******************************************************************************
-[your text here]
+```
+shim:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.cloudlinux,4,CloudLinux,shim,16.1,security@cloudlinux.com
+
+grub2:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+grub,5,Free Software Foundation,grub,2.02,https//www.gnu.org/software/grub/
+grub.rh,2,Red Hat,grub2,2.02-170.el8_10.2,mailto:secalert@redhat.com
+grub.cloudlinux,2,CloudLinux,grub2,2.02-170.el8_10.2.cloudlinux.1,mailto:security@cloudlinux.com
+
+fwupd:
+sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+fwupd-efi,1,Firmware update daemon,fwupd-efi,1.3,https://github.com/fwupd/fwupd
+fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.7.8,mail:secalert@redhat.com
+fwupd-efi.cloudlinux,1,CloudLinux,fwupd,1.7.8,mail:security@cloudlinux.com
+```
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
@@ -340,45 +344,57 @@ Skip this, if you're not using GRUB2.
 
 Hint: this is about those modules that are in the binary itself, not the `.mod` files in your filesystem.
 *******************************************************************************
-[your text here]
+```
+all_video boot blscfg btrfs cat configfile cryptodisk echo ext2 fat font
+gcry_rijndael gcry_rsa gcry_serpent gcry_sha256 gcry_twofish gcry_whirlpool
+gfxmenu gfxterm gzio halt hfsplus http increment iso9660 jpeg loadenv loopback
+linux lvm luks mdraid09 mdraid1x minicmd net normal part_apple part_msdos
+part_gpt password_pbkdf2 png reboot regexp search search_fs_uuid search_fs_file
+search_label serial sleep syslinuxcfg test tftp video xfs efi_netfs efifwsetup
+efinet lsefi lsefimmap connectefi backtrace chain usb usbserial_common
+usbserial_pl2303 usbserial_ftdi usbserial_usbdebug keylayouts at_keyboard
+```
 
 *******************************************************************************
 ### If you are using systemd-boot on arm64 or riscv, is the fix for [unverified Devicetree Blob loading](https://github.com/systemd/systemd/security/advisories/GHSA-6m6p-rjcq-334c) included?
 *******************************************************************************
-[your text here]
+N/A. We do not use systemd-boot and this submission targets x86_64 only.
 
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-[your text here]
+RHEL 8 downstream, `2.02-170.el8_10.2.cloudlinux.1`  
+grub2-2.02-170.el8_10.2.cloudlinux.1.src.rpm
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
 Hint: The most common case here will be a firmware updater like fwupd.
 *******************************************************************************
-[your text here]
+It also launches fwupd.
 
 *******************************************************************************
 ### If your GRUB2 or systemd-boot launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
 Skip this, if you're not using GRUB2 or systemd-boot.
 *******************************************************************************
-[your text here]
+grub2 verifies signatures on booted kernels via shim.  
+fwupd does not include code to launch other binaries, it can only load UEFI updates.
 
 *******************************************************************************
 ### How do the launched components prevent execution of unauthenticated code?
 Summarize in one or two sentences, how your secure bootchain works on higher level.
 *******************************************************************************
-[your text here]
+grub2 verifies signatures on booted kernels via shim, and the kernel auto-enables lockdown in `integrity` mode when Secure Boot is detected, blocking loading of unsigned modules and other paths that could run unauthenticated code.  
+fwupd does not include code to launch other binaries, it can only load UEFI updates.
 
 *******************************************************************************
 ### Does your shim load any loaders that support loading unsigned kernels (e.g. certain GRUB2 configurations)?
 *******************************************************************************
-[your text here]
+No.
 
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
 *******************************************************************************
-[your text here]
+It's the RHEL 8 kernel based on 4.18.0, plus a full complement of patches for Secure Boot and relevant bug fixes. Kernel module signing is enforced and lockdown is enabled automatically when Secure Boot is detected.
 
 *******************************************************************************
 ### What contributions have you made to help us review the applications of other applicants?
@@ -388,9 +404,14 @@ A reasonable timeframe of waiting for a review can reach 2-3 months. Helping us 
 
 For newcomers, the applications labeled as [*easy to review*](https://github.com/rhboot/shim-review/issues?q=is%3Aopen+is%3Aissue+label%3A%22easy+to+review%22) are recommended to start the contribution process.
 *******************************************************************************
-[your text here]
+None yet. We will help with reviewing other applications going forward.
 
 *******************************************************************************
 ### Add any additional information you think we may need to validate this shim signing application.
 *******************************************************************************
-[your text here]
+Previous reviews:  
+shim-15.4: https://github.com/rhboot/shim-review/issues/152  
+shim-15.6: https://github.com/rhboot/shim-review/issues/251  
+shim-15.8: https://github.com/rhboot/shim-review/issues/365
+
+Security contacts and PGP keys are unchanged since the shim-15.8 review.
