@@ -1,21 +1,21 @@
 Mock Version: 6.6
-ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --noclean --target x86_64 --nodeps /builddir/build/SPECS/shim-unsigned-x64.spec'], chrootPath='/srv/build-node/mock/4f6dd747a9bade1957e28dca48556af986598ca11c83da2050287dfae4bc533b.0/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fffea2dad30>timeout=0uid=1000gid=135user='mockbuild'unshare_net=FalseprintOutput=Falsenspawn_args=['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.v6_pelih:/etc/resolv.conf'])
+ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --noclean --target x86_64 --nodeps /builddir/build/SPECS/shim-unsigned-x64.spec'], chrootPath='/srv/build-node/mock/085d950e3ee68860fb377cce1c22e8c40243da338f2fd4534e4765cbf1c696d9.0/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fffea2dfd30>timeout=0uid=1000gid=135user='mockbuild'unshare_net=FalseprintOutput=Falsenspawn_args=['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.rzvbj9wz:/etc/resolv.conf'])
 Executing command: ['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --noclean --target x86_64 --nodeps /builddir/build/SPECS/shim-unsigned-x64.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 Building target platforms: x86_64
 Building for target x86_64
 Wrote: /builddir/build/SRPMS/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.src.rpm
 Child return code was: 0
-ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --noclean --target x86_64 --nodeps /builddir/build/SPECS/shim-unsigned-x64.spec'], chrootPath='/srv/build-node/mock/4f6dd747a9bade1957e28dca48556af986598ca11c83da2050287dfae4bc533b.0/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fffea2dad30>timeout=0uid=1000gid=135user='mockbuild'unshare_net=FalseprintOutput=Falsenspawn_args=['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.v6_pelih:/etc/resolv.conf'])
+ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --noclean --target x86_64 --nodeps /builddir/build/SPECS/shim-unsigned-x64.spec'], chrootPath='/srv/build-node/mock/085d950e3ee68860fb377cce1c22e8c40243da338f2fd4534e4765cbf1c696d9.0/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fffea2dfd30>timeout=0uid=1000gid=135user='mockbuild'unshare_net=FalseprintOutput=Falsenspawn_args=['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.rzvbj9wz:/etc/resolv.conf'])
 Executing command: ['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --noclean --target x86_64 --nodeps /builddir/build/SPECS/shim-unsigned-x64.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 Building target platforms: x86_64
 Building for target x86_64
 Wrote: /builddir/build/SRPMS/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.src.rpm
 Child return code was: 0
-ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --noclean --target x86_64 --nodeps /builddir/build/SPECS/shim-unsigned-x64.spec'], chrootPath='/srv/build-node/mock/4f6dd747a9bade1957e28dca48556af986598ca11c83da2050287dfae4bc533b.0/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fffea2dad30>timeout=0uid=1000gid=135user='mockbuild'unshare_net=FalseprintOutput=Falsenspawn_args=['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.v6_pelih:/etc/resolv.conf'])
+ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --noclean --target x86_64 --nodeps /builddir/build/SPECS/shim-unsigned-x64.spec'], chrootPath='/srv/build-node/mock/085d950e3ee68860fb377cce1c22e8c40243da338f2fd4534e4765cbf1c696d9.0/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fffea2dfd30>timeout=0uid=1000gid=135user='mockbuild'unshare_net=FalseprintOutput=Falsenspawn_args=['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.rzvbj9wz:/etc/resolv.conf'])
 Executing command: ['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --noclean --target x86_64 --nodeps /builddir/build/SPECS/shim-unsigned-x64.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 Building target platforms: x86_64
 Building for target x86_64
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.GPUIen
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.huky56
 + umask 022
 + cd /builddir/build/BUILD
 + cd /builddir/build/BUILD
@@ -37,7 +37,7 @@ Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.GPUIen
 + mkdir build-ia32
 + cp /builddir/build/SOURCES/sbat.cloudlinux.csv data/
 + exit 0
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.P2RRoR
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.SDXlSi
 + umask 022
 + cd /builddir/build/BUILD
 + cd shim-16.1
@@ -1225,10 +1225,10 @@ make -C /builddir/build/BUILD/shim-16.1/build-ia32/gnu-efi/ia32/lib -f /builddir
 make[2]: Entering directory '/builddir/build/BUILD/shim-16.1/build-ia32/gnu-efi/ia32/lib'
 make -C /builddir/build/BUILD/shim-16.1/build-ia32/gnu-efi/ia32/inc -f /builddir/build/BUILD/shim-16.1/gnu-efi//inc/Makefile SRCDIR=/builddir/build/BUILD/shim-16.1/gnu-efi//inc ARCH=ia32
 make[2]: Entering directory '/builddir/build/BUILD/shim-16.1/build-ia32/gnu-efi/ia32/inc'
-gcc -I/builddir/build/BUILD/shim-16.1/gnu-efi//lib -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/ia32 -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/protocol -Wno-error=pragmas -mno-mmx -mno-sse -mno-avx -fpic -m32 -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-16.1/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_ia32 -c /builddir/build/BUILD/shim-16.1/gnu-efi//lib/boxdraw.c -o boxdraw.o
-gcc -I/builddir/build/BUILD/shim-16.1/gnu-efi//lib -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/ia32 -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/protocol -Wno-error=pragmas -mno-mmx -mno-sse -mno-avx -fpic -m32 -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-16.1/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_ia32 -c /builddir/build/BUILD/shim-16.1/gnu-efi//lib/smbios.c -o smbios.o
 make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/builddir/build/BUILD/shim-16.1/build-ia32/gnu-efi/ia32/inc'
+gcc -I/builddir/build/BUILD/shim-16.1/gnu-efi//lib -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/ia32 -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/protocol -Wno-error=pragmas -mno-mmx -mno-sse -mno-avx -fpic -m32 -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-16.1/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_ia32 -c /builddir/build/BUILD/shim-16.1/gnu-efi//lib/boxdraw.c -o boxdraw.o
+gcc -I/builddir/build/BUILD/shim-16.1/gnu-efi//lib -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/ia32 -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/protocol -Wno-error=pragmas -mno-mmx -mno-sse -mno-avx -fpic -m32 -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-16.1/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_ia32 -c /builddir/build/BUILD/shim-16.1/gnu-efi//lib/smbios.c -o smbios.o
 gcc -I/builddir/build/BUILD/shim-16.1/gnu-efi//lib -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/ia32 -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/protocol -Wno-error=pragmas -mno-mmx -mno-sse -mno-avx -fpic -m32 -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-16.1/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_ia32 -c /builddir/build/BUILD/shim-16.1/gnu-efi//lib/console.c -o console.o
 gcc -I/builddir/build/BUILD/shim-16.1/gnu-efi//lib -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/ia32 -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/protocol -Wno-error=pragmas -mno-mmx -mno-sse -mno-avx -fpic -m32 -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-16.1/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_ia32 -c /builddir/build/BUILD/shim-16.1/gnu-efi//lib/crc.c -o crc.o
 gcc -I/builddir/build/BUILD/shim-16.1/gnu-efi//lib -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/ia32 -I/builddir/build/BUILD/shim-16.1/gnu-efi/inc/protocol -Wno-error=pragmas -mno-mmx -mno-sse -mno-avx -fpic -m32 -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-16.1/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_ia32 -c /builddir/build/BUILD/shim-16.1/gnu-efi//lib/data.c -o data.o
@@ -1365,7 +1365,7 @@ objcopy -D -j .text -j .sdata -j .data -j .data.ident \
 validate_nx_compat():380: NX Compatibility flag is not set
 + cd ..
 + exit 0
-Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.AFqkBY
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.2IoeqX
 + umask 022
 + cd /builddir/build/BUILD
 + '[' /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64 '!=' / ']'
@@ -1400,6 +1400,15 @@ find /builddir/build/BUILD/shim-16.1 -type f -a '(' -iname '*.c' -o -iname '*.h'
 	install -d -m 0755 /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64//usr/src/debug//shim-16.1-2.el8.cloudlinux.1/$(dirname ${outfile}) ; \
 	install -m 0644 ${file} /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64//usr/src/debug//shim-16.1-2.el8.cloudlinux.1/${outfile} ; \
 done
++ for x in shimx64.efi mmx64.efi fbx64.efi
++ cp /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/x64/shimx64.efi /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/x64/shimx64.nx.efi
++ ./post-process-pe -n /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/x64/shimx64.nx.efi
++ for x in shimx64.efi mmx64.efi fbx64.efi
++ cp /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/x64/mmx64.efi /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/x64/mmx64.nx.efi
++ ./post-process-pe -n /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/x64/mmx64.nx.efi
++ for x in shimx64.efi mmx64.efi fbx64.efi
++ cp /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/x64/fbx64.efi /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/x64/fbx64.nx.efi
++ ./post-process-pe -n /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/x64/fbx64.nx.efi
 + cd ..
 + cd build-ia32
 + setarch linux32 make TOPDIR=.. -f ../Makefile COMMITID=afc49558b34548644c1cd0ad1b6526a9470182ed EFIDIR=centos PKGNAME=shim RELEASE=2.el8.cloudlinux.1 ENABLE_HTTPBOOT=true ENABLE_SHIM_HASH=true SBAT_AUTOMATIC_DATE=2023012900 VENDOR_DB_FILE=../vendor_db.esl ARCH=ia32 'DEFAULT_LOADER=\\\\grubia32.efi' DESTDIR=/builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64 install-as-data install-debuginfo install-debugsource
@@ -1419,6 +1428,15 @@ find /builddir/build/BUILD/shim-16.1 -type f -a '(' -iname '*.c' -o -iname '*.h'
 	install -d -m 0755 /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64//usr/src/debug//shim-16.1-2.el8.cloudlinux.1/$(dirname ${outfile}) ; \
 	install -m 0644 ${file} /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64//usr/src/debug//shim-16.1-2.el8.cloudlinux.1/${outfile} ; \
 done
++ for x in shimia32.efi mmia32.efi fbia32.efi
++ cp /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/ia32/shimia32.efi /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/ia32/shimia32.nx.efi
++ ./post-process-pe -n /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/ia32/shimia32.nx.efi
++ for x in shimia32.efi mmia32.efi fbia32.efi
++ cp /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/ia32/mmia32.efi /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/ia32/mmia32.nx.efi
++ ./post-process-pe -n /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/ia32/mmia32.nx.efi
++ for x in shimia32.efi mmia32.efi fbia32.efi
++ cp /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/ia32/fbia32.efi /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/ia32/fbia32.nx.efi
++ ./post-process-pe -n /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64/usr/share/shim/16.1-2.el8.cloudlinux.1/ia32/fbia32.nx.efi
 + cd ..
 + /builddir/build/SOURCES/shim-find-debuginfo.sh x64 ia32
 + /usr/lib/rpm/check-buildroot
@@ -1431,7 +1449,7 @@ done
 + PYTHON3=/usr/libexec/platform-python
 + /usr/lib/rpm/redhat/brp-mangle-shebangs
 Processing files: shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64
-Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.w5GRmx
+Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.qbCCx0
 + umask 022
 + cd /builddir/build/BUILD
 + cd shim-16.1
@@ -1445,7 +1463,7 @@ Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.w5GRmx
 Provides: bundled(openssl) = 1.0.2j shim-unsigned-x64 = 1:16.1-2.el8.cloudlinux.1 shim-unsigned-x64(x86-64) = 1:16.1-2.el8.cloudlinux.1
 Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 Processing files: shim-unsigned-ia32-16.1-2.el8.cloudlinux.1.x86_64
-Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.0GMKou
+Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.tQyPvx
 + umask 022
 + cd /builddir/build/BUILD
 + cd shim-16.1
@@ -1462,12 +1480,12 @@ Processing files: shim-unsigned-x64-debuginfo-16.1-2.el8.cloudlinux.1.noarch
 Provides: shim-unsigned-x64-debuginfo = 1:16.1-2.el8.cloudlinux.1
 Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 Recommends: shim-unsigned-x64-debugsource(x86-64) = 1:16.1-2.el8.cloudlinux.1
-warning: Arch dependent binaries in noarch package
 Processing files: shim-unsigned-ia32-debuginfo-16.1-2.el8.cloudlinux.1.noarch
+warning: Arch dependent binaries in noarch package
 Provides: shim-unsigned-ia32-debuginfo = 1:16.1-2.el8.cloudlinux.1
 Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
-warning: Arch dependent binaries in noarch package
 Processing files: shim-unsigned-x64-debugsource-16.1-2.el8.cloudlinux.1.noarch
+warning: Arch dependent binaries in noarch package
 Provides: shim-unsigned-x64-debugsource = 1:16.1-2.el8.cloudlinux.1
 Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 Checking for unpackaged file(s): /usr/lib/rpm/check-files /builddir/build/BUILDROOT/shim-unsigned-x64-16.1-2.el8.cloudlinux.1.x86_64

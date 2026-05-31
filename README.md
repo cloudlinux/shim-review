@@ -116,7 +116,7 @@ None.
 
 See https://techcommunity.microsoft.com/t5/hardware-dev-center/nx-exception-for-shim-community/ba-p/3976522 for more details on the signing of shim without NX bit.
 *******************************************************************************
-No. The NX bit is not set in this shim build.
+It's set in shimx64.nx.efi/shimia32.nx.efi and not set in shimx64.efi/shimia32.efi
 
 *******************************************************************************
 ### What exact implementation of Secure Boot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
@@ -240,7 +240,7 @@ Yes.
 ### If there are allow-listed hashes please provide exact binaries for which hashes are created via file sharing service, available in public with anonymous access for verification.
 *******************************************************************************
 2 certificates enrolled in vendor_db:  
-- Current CloudLinux EV cert (clsecureboot001.cer)
+- CloudLinux EV cert (clsecureboot001.cer) - expired, but we keep it for compatibility with older kernels
 - CloudLinux self-signed CA cert (clsecurebootca2.cer)
 
 No allow-listed hashes in vendor_db.
@@ -283,8 +283,10 @@ Update shim from 15.8 to 16.1. No other changes in the secure boot chain (same c
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 ```
-28d27f9e25e263244275c67bf382a9a13be423eb2e8a77ac942ddff7c33f3d32  shimx64.efi
 b182fd98418bb31864f3cd0fa2fcd3d3dab6d0eb53d9eeb0f5411d9cb7b6e8a8  shimia32.efi
+adf571002569d86fc10f3e75faedc20450da03958dc8a65c56b7546f4aa496f6  shimia32.nx.efi
+28d27f9e25e263244275c67bf382a9a13be423eb2e8a77ac942ddff7c33f3d32  shimx64.efi
+7a7e0e00f2b5efec287da75b37235172dc42e6d730d668daf33aea3f44a153c0  shimx64.nx.efi
 ```
 
 *******************************************************************************
